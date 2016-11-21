@@ -1,17 +1,14 @@
-#include<stdlib.h>
 #include<stdio.h>
-#include<conio.h>
+#include<stdlib.h>
 
 void main(){
-	int fat, n;
+	int fat=5, i;
 	
-	printf("Insira um valor para o qual deseja calcular seu fatorial: ");
-	scanf("%d", &n);
-	 
-	for(fat = 1; n > 1; n = n - 1)
-	fat = fat * n;
-	 
-	printf("\nFatorial calculado: %d", fat);
+	while(i<5){
+		fat = fat * i;
+		printf("fatorial de 5: %d\n", fat);
+		i++;
+	}
+	
 	getch();
-	
 }
